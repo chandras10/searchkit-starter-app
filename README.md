@@ -31,11 +31,14 @@ These instructions will get you a copy of the project up and running on your AWS
 	![AWS Cloud9](images/aws-cloud9-ec2-connect.png)
 14. Click **Create environment**.
     ![AWS Cloud9](images/aws-cloud9-ec2-connect2.png)
-
-
-
-7. After a few minutes, when your environment is up, you should see following screen.
-![AWS Cloud9](images/aws-cloud9.jpg)
+15. In the below screen, uncheck the “c9.ide.lambda.docker”. Click **Next**.
+	![AWS Cloud9](images/aws-cloud9-env-ready1.png)
+16. In the next screen, click cancel the installation and click Finish. We do not need lambda related stuffs for now
+	![AWS Cloud9](images/aws-cloud9-env-ready2.png)
+17. Click **Finish** in the below screen
+	![AWS Cloud9](images/aws-cloud9-env-ready3.png)
+16. Your cloud9 environment is ready
+	![AWS Cloud9](images/aws-cloud9-env-ready4.png)
 
 ## Allocate storage
 Your Cloud9 instance is allocated 8 GB storage by default. We will increase this because we will be installing dependencies.
