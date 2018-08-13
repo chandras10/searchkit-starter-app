@@ -1,10 +1,10 @@
-## Searchkit Starter App
+## Ask Jeeves: Backend integration of mobile applications using AWS AppSync
 
-Used to start new applications which use Searchkit. Based off the popular create-react-app. If you dont know about `create-react-app`, please read their [readme](https://github.com/facebookincubator/create-react-app/blob/master/README.md) and install create-react-app on your machine 
+##  Getting Started
+These instructions will get you a copy of the project up and running on your AWS account.
 
-##  Install instructions
+### Setting up cloud9 environment 
 
-- git clone git@github.com:searchkit/searchkit-starter-app.git
-- cd searchkit-starter-app
-- yarn
-- npm start
+1.	Login to AWS console and make sure to select Singapore (ap-southeast-1) region.
+2.	Go to EC2 page and create a new key pair if not already exists and download the key to your machine
+3.	Open AWS Cloud9 services page. Click Create Environment.
