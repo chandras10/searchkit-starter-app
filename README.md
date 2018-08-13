@@ -52,7 +52,7 @@ Your Cloud9 instance is allocated 8 GB storage by default. We will increase this
 ![AWS EBS Changed](images/aws-ebs-changed.jpg)
 
 ## Configure security group
-AWS Cloud9 restricts inbound access to the IP addresses it uses to connect to the instance. In addition, we will need to allow traffic on `19000` and `19001`, both of which are used by Expo. The Expo server runs on port `19000` while the npm package manager is exposed on `19001`. Refer to the [Expo docs](https://docs.expo.io/versions/v29.0.0/guides/how-expo-works.html) to learn more.
+AWS Cloud9 restricts inbound access to the IP addresses it uses to connect to the instance. In addition, we will need to allow traffic on `8080` which is used by Expo. Refer to the [Expo docs](https://docs.expo.io/versions/v29.0.0/guides/how-expo-works.html) to learn more.
 
 1. Go back to the tab where you have the EC2 instances.
 
@@ -65,7 +65,7 @@ AWS Cloud9 restricts inbound access to the IP addresses it uses to connect to th
 4. Click on **Add Rule**
 ![AWS Add Security Group Rule](images/aws-add-security-group-rule.jpg)
 
-5. Key in `19000-19001`, and `0.0.0.0/0`, in respective fields
+5. Key in `8080`, and `0.0.0.0/0`, in respective fields
 ![AWS Add New Rule](images/aws-add-new-rule.jpg)
 
 6. Click on **Save**.
