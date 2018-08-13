@@ -62,3 +62,5 @@ These instructions will get you a copy of the project up and running on your AWS
 
 1.	Open the cloud9 terminal
 2.	Issue the below command `curl -XGET <your es domain name – copy from cloudformation output>/amazonec2_new/_count`
+	![AWS Cloud9](images/aws-cloud9-es1.png)
+	![AWS Cloud9](images/aws-cloud9-es2.png)
