@@ -20,7 +20,9 @@ These instructions will get you a copy of the project up and running on your AWS
 
 5. Open a new browser tab and instantiate this CloudFormation template: [![Cloudformation](images/aws-cloudformation-button.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?templateURL=https://s3-ap-southeast-1.amazonaws.com/techsummit2018appsync/prereqscfn.json) 
 
-5. Click on **Create Environment**.
+6. Click on **Next**. ![](images/aws-cloudformation-scr1.png)
+
+7. 
 
 6. While it is being built, you may move on to the next section.
 
