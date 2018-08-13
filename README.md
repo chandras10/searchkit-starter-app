@@ -14,15 +14,25 @@ These instructions will get you a copy of the project up and running on your AWS
 8. Click on **Next**. ![](images/aws-cloudformation-scr1.png)
 9. Please provide below inputs
 	* Stack Name :  cloud9env (any name as you prefer)
-	* Cloud9Key : Paste the key you have copied in the step 4
+	* Cloud9Key : Paste the key you have copied in the step 6
 	* InstanceType : You can leave the default (c4.xlarge)
 	* KeyName : Please select the existing key in this region(Singapore). If not, please create one 
 	* SSHLocation : We can leave as the default value.
 	![](images/aws-cloudformation-scr2.png) 
 	Click on **Next**.
-10. Leave the defaults as-is on this screen, click *Next*.
-11. In Next screen, Select the checkbox for “I acknowledge that cloudformation might create IAM resouces” in the bottom and Click *Create*.
+10. Leave the defaults as-is on this screen, click **Next**.
+11. In Next screen, Select the checkbox for “I acknowledge that cloudformation might create IAM resouces” in the bottom and Click **Create**.
 12. Once the stack creation completes, Go to Outputs and copy the IP address as below ![Cloudformation complete](images/aws-cloudformation-scr3.png)
+13. Go to the cloud9 screen/tab when we left in the step 6 and fill the below details and then click Next step
+	* User : ec2-user
+	* Host : Paste the IP address copied from the cloudformation stack in step 12
+	* Port : 22
+	* Advanced settings. Environment path – give any pathname (without spaces)
+	![AWS Cloud9](images/aws-cloud9-ec2-connect.png)
+14. Click **Create environment**.
+    ![AWS Cloud9](images/aws-cloud9-ec2-connect2.png)
+
+
 
 7. After a few minutes, when your environment is up, you should see following screen.
 ![AWS Cloud9](images/aws-cloud9.jpg)
