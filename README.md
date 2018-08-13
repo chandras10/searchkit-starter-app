@@ -6,5 +6,71 @@ These instructions will get you a copy of the project up and running on your AWS
 ### Setting up cloud9 environment 
 
 1.	Login to AWS console and make sure to select Singapore (`ap-southeast-1`) region.
-2.	Go to EC2 page and create a new key pair if not already exists and download the key to your machine
-3.	Open AWS Cloud9 services page. Click Create Environment.
+2.	Go to EC2 page and create a new key pair if not already exists and download the key to your machine.
+3.	## Create Cloud9 environment
+
+1. Click the link [here](https://ap-southeast-1.console.aws.amazon.com/cloud9/home/product?region=ap-southeast-1) to go to Cloud9 console. Sign in with your credentials if necessary. You need to be in **Singapore** region for this lab. 
+
+2. Click on **Create Environment**.
+![AWS Cloud9 Create Environment](images/aws-cloud9-create.png)
+
+3. Give any appropriate name and description to your environment. Click on **Next**.
+
+4. Choose *m4.large instance* type and click on **Next**.
+
+5. Click on **Create Environment**.
+
+6. While it is being built, you may move on to the next section.
+
+7. After a few minutes, when your environment is up, you should see following screen.
+![AWS Cloud9](images/aws-cloud9.jpg)
+
+## Allocate storage
+Your Cloud9 instance is allocated 8 GB storage by default. We will increase this because we will be installing dependencies.
+
+1. Go to your running instances by clicking [here](https://ap-southeast-1.console.aws.amazon.com/ec2/v2/home?region=ap-southeast-1#Instances:sort=desc:launchTime)
+
+2. Find the instance you have just created by launching a Cloud9 environment. The name will be `aws-cloud9-<your environment name>-<random string>`
+![AWS EC2 Found](images/aws-ec2-found.jpg)
+
+3. Select the instance. Scroll down at the bottom part. Find the Block devices.
+![AWS EC2 Block Device](images/aws-ec2-block-devices.jpg)
+
+4. Click onto it. You will see a pop up.
+![AWS EC2 Select Block Device](images/aws-ec2-block-device-popup.jpg)
+
+5. Right click on it and open in new tab.
+![AWS Open New Tab](images/aws-open-new-tab.jpg)
+
+6. Click on **Actions**, **Modify Volume**.
+![AWS EC2 Modify Volume](images/aws-ec2-modify-volume.jpg)
+
+7. Change *8* to *120* and click on **Modify**.
+![AWS EC2 Volume Modified](images/aws-ec2-volume-modified.jpg)
+
+8. Click on **Yes** and wait for the change. It will take a couple of minutes.
+![AWS EBS Changed](images/aws-ebs-changed.jpg)
+
+## Configure security group
+AWS Cloud9 restricts inbound access to the IP addresses it uses to connect to the instance. In addition, we will need to allow traffic on `19000` and `19001`, both of which are used by Expo. The Expo server runs on port `19000` while the npm package manager is exposed on `19001`. Refer to the [Expo docs](https://docs.expo.io/versions/v29.0.0/guides/how-expo-works.html) to learn more.
+
+1. Go back to the tab where you have the EC2 instances.
+
+2. Select the same EC2 instance and select the security group
+![AWS EC2 Security Group](images/aws-ec2-security-group.jpg)
+
+3. At the Security Group, click on **Inbound**, then Edit.
+![AWS Security Group](images/aws-security-group.jpg)
+
+4. Click on **Add Rule**
+![AWS Add Security Group Rule](images/aws-add-security-group-rule.jpg)
+
+5. Key in `19000-19001`, and `0.0.0.0/0`, in respective fields
+![AWS Add New Rule](images/aws-add-new-rule.jpg)
+
+6. Click on **Save**.
+![AWS Save New Rule](images/aws-security-group-rule-save.jpg)
+
+7. Double-check that the new inbound rules have been added
+![AWS Security Group New Rule](images/aws-security-group-new-rule.jpg)
+
