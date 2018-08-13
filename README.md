@@ -31,7 +31,7 @@ Your Cloud9 instance is allocated 8 GB storage by default. We will increase this
 1. Go to your running instances by clicking [here](https://ap-southeast-1.console.aws.amazon.com/ec2/v2/home?region=ap-southeast-1#Instances:sort=desc:launchTime)
 
 2. Find the instance you have just created by launching a Cloud9 environment. The name will be `aws-cloud9-<your environment name>-<random string>`
-![AWS EC2 Found](images/aws-ec2-found.jpg)
+![AWS EC2 Found](images/aws-ec2-found.png)
 
 3. Select the instance. Scroll down at the bottom part. Find the Block devices.
 ![AWS EC2 Block Device](images/aws-ec2-block-devices.jpg)
