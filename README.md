@@ -22,7 +22,14 @@ These instructions will get you a copy of the project up and running on your AWS
 
 6. Click on **Next**. ![](images/aws-cloudformation-scr1.png)
 
-7. 
+7. Please provide below inputs
+	a.	Stack Name :  cloud9env (any name as you prefer)
+	b.	Cloud9Key : Paste the key you have copied in the step 4
+	c.	InstanceType : You can leave the default (c4.xlarge)
+	d.	KeyName : Please select the existing key in this region(Singapore). If not, please create one 
+	e.	SSHLocation : We can leave as the default value.
+	![](images/aws-cloudformation-scr2.png) 
+
 
 6. While it is being built, you may move on to the next section.
 
