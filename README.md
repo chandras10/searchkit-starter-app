@@ -40,10 +40,23 @@ These instructions will get you a copy of the project up and running on your AWS
 16. Your cloud9 environment is ready
 	![AWS Cloud9](images/aws-cloud9-env-ready4.png)
 
-## Allocate storage
-Your Cloud9 instance is allocated 8 GB storage by default. We will increase this because we will be installing dependencies.
+## Customizing the Cloud9 Environment
 
-1. Go to your running instances by clicking [here](https://ap-southeast-1.console.aws.amazon.com/ec2/v2/home?region=ap-southeast-1#Instances:sort=desc:launchTime)
+1. Go to the newly cloud9 environment and click the settings, select THEMES(top right corner near cloud9 symbol). Select one of the Classic theme and night based color ( this is needed for the QR code to be visible for the expo client).
+    ![AWS Cloud9](images/aws-cloud9-theme1.png)
+2. Once the theme got changed, open terminal window. The current working directory will be whatever the environment name you have given during the cloud9 create environment steps.
+3. One a shell/terminal and run command `create-react-native-app Test`.
+    ![AWS Cloud9](images/aws-cloud9-theme2.png)
+    ![AWS Cloud9](images/aws-cloud9-theme3.png)
+4. Once the creation is success, you will see the final confirmation as below. Also, in your cloud9 IDE, you will see the project folder “Test”.
+	![AWS Cloud9](images/aws-cloud9-theme4.png)
+5. `cd Test; npm start`
+	![AWS Cloud9](images/aws-cloud9-react-app1.png)
+	![AWS Cloud9](images/aws-cloud9-react-app2.png)
+6. Now, from your mobile, open the expo app.
+7. Scan the QR code on the expo app and you will see the application loading in your mobile.
+
+
 
 2. Find the instance you have just created by launching a Cloud9 environment. The name will be `aws-cloud9-<your environment name>-<random string>`
 ![AWS EC2 Found](images/aws-ec2-found.png)
