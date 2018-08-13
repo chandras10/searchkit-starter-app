@@ -55,50 +55,10 @@ These instructions will get you a copy of the project up and running on your AWS
 	![AWS Cloud9](images/aws-cloud9-react-app2.png)
 6. Now, from your mobile, open the expo app.
 7. Scan the QR code on the expo app and you will see the application loading in your mobile.
+8. You can edit the file `App.js` and once saved, you will see the application in your mobile auto load the changes.
+	![AWS Cloud9](images/aws-cloud9-react-app3.png)
 
+## Verifying your Elasticsearch cluster installation
 
-
-2. Find the instance you have just created by launching a Cloud9 environment. The name will be `aws-cloud9-<your environment name>-<random string>`
-![AWS EC2 Found](images/aws-ec2-found.png)
-
-3. Select the instance. Scroll down at the bottom part. Find the Block devices.
-![AWS EC2 Block Device](images/aws-ec2-block-devices.jpg)
-
-4. Click onto it. You will see a pop up.
-![AWS EC2 Select Block Device](images/aws-ec2-block-device-popup.jpg)
-
-5. Right click on it and open in new tab.
-![AWS Open New Tab](images/aws-open-new-tab.jpg)
-
-6. Click on **Actions**, **Modify Volume**.
-![AWS EC2 Modify Volume](images/aws-ec2-modify-volume.jpg)
-
-7. Change *8* to *120* and click on **Modify**.
-![AWS EC2 Volume Modified](images/aws-ec2-volume-modified.jpg)
-
-8. Click on **Yes** and wait for the change. It will take a couple of minutes.
-![AWS EBS Changed](images/aws-ebs-changed.jpg)
-
-## Configure security group
-AWS Cloud9 restricts inbound access to the IP addresses it uses to connect to the instance. In addition, we will need to allow traffic on `8080` which is used by Expo. Refer to the [Expo docs](https://docs.expo.io/versions/v29.0.0/guides/how-expo-works.html) to learn more.
-
-1. Go back to the tab where you have the EC2 instances.
-
-2. Select the same EC2 instance and select the security group
-![AWS EC2 Security Group](images/aws-ec2-security-group.jpg)
-
-3. At the Security Group, click on **Inbound**, then Edit.
-![AWS Security Group](images/aws-security-group.jpg)
-
-4. Click on **Add Rule**
-![AWS Add Security Group Rule](images/aws-add-security-group-rule.jpg)
-
-5. Key in `8080`, and `0.0.0.0/0`, in respective fields
-![AWS Add New Rule](images/aws-add-new-rule.jpg)
-
-6. Click on **Save**.
-![AWS Save New Rule](images/aws-security-group-rule-save.jpg)
-
-7. Double-check that the new inbound rules have been added
-![AWS Security Group New Rule](images/aws-security-group-new-rule.jpg)
-
+1.	Open the cloud9 terminal
+2.	Issue the below command `curl -XGET <your es domain name – copy from cloudformation output>/amazonec2_new/_count`
