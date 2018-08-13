@@ -16,7 +16,7 @@ These instructions will get you a copy of the project up and running on your AWS
 
 3. Give any appropriate name and description to your environment. Click on **Next**.
 
-4. Choose *m4.large instance* type and click on **Next**.
+4. In the next page, select the option *Connect and run in remote server (SSH)*. Scroll down and expand View Public SSH key. Click *Copy key to clip board*. Once you have copied the key, please leave this screen intact. We will come back once the EC2 creation completed. ![AWS Cloud9](images/aws-cloud9-remote-server.png)
 
 5. Click on **Create Environment**.
 
