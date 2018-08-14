@@ -1,4 +1,4 @@
-## Ask Jeeves: Backend integration of mobile applications using AWS AppSync
+## [Ask Jeeves!](https://en.wikipedia.org/wiki/Jeeves): Backend integration of mobile applications using AWS AppSync
 
 ##  Getting Started
 These instructions will get you a copy of the project up and running on your AWS account.
