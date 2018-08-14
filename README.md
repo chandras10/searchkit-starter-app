@@ -11,7 +11,11 @@
 </a>
 
 5. Give any appropriate name and description to your environment. Click on **Next**.
-6. In the next page, select the option **Connect and run in remote server (SSH)**. Scroll down and expand View Public SSH key. Click **Copy key to clip board**. Once you have copied the key, please leave this screen intact. We will come back once the EC2 creation completed. ![AWS Cloud9](images/aws-cloud9-remote-server.png)
+6. In the next page, select the option **Connect and run in remote server (SSH)**. Scroll down and expand View Public SSH key. Click **Copy key to clip board**. Once you have copied the key, please leave this screen intact. We will come back once the EC2 creation completed. 
+<a href="">
+  <img src="images/aws-cloud9-remote-server.png" width="550" />
+</a>
+
 7. Open a new browser tab and instantiate this CloudFormation template: [![Cloudformation](images/aws-cloudformation-button.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?templateURL=https://s3-ap-southeast-1.amazonaws.com/techsummit2018appsync/prereqscfn.json) 
 8. Click on **Next**. ![](images/aws-cloudformation-scr1.png)
 9. Please provide below inputs
