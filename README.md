@@ -17,7 +17,7 @@
 </a>
 
 7. Open a new browser tab and instantiate this CloudFormation template: 
-<a href="https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?templateURL=https://s3-ap-southeast-1.amazonaws.com/techsummit2018appsync/prereqscfn.json", target="_blank">
+<a href="", target="_blank">
   <img src="images/aws-cloudformation-button.png" width="150" />
 </a>
 
