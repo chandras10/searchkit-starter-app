@@ -50,7 +50,7 @@
     <img src="images/aws-cloudformation-scr3.png" width="33%" />
 7. Go to the cloud9 screen/tab when we left in the step 6 and fill the below details and then click next step.
     * User : ec2-user
-    * Host : Paste the IP address copied from the cloudformation stack in step 6
+    * Host : Paste the IP address copied from the cloudformation stack
     * Port : 22
     * Advanced settings. Environment path – give any pathname (without spaces)
     <img src="images/aws-cloud9-ec2-connect.png" width="33%" />
@@ -88,8 +88,72 @@
 <img src="images/aws-cloud9-react-app3.png" width="33%" />
 
 <a name="clone-mobile-code"></a>
-## Replicate mobile application codebase.
-`git clone https://github.com/arunmbalaji/ask-jeeves.git`
+## Replicate mobile application and set up Cognito authentication using AWS Amplify.
+1. `git clone https://github.com/arunmbalaji/ask-jeeves.git`
+2. cd to the project directory "ask-jeeves".
+3. Firstly Install Node.js (download from https://nodejs.org/en/). This will give us npm.
+4. We can then install some dependencies:
+>npm install -g react-native-cli
+Yarn is also widely used instead of npm - many online demos use it so it's not bad idea to install, but npm will work fine as well.
+>npm install -g yarn
+
+>npm install -g awsmobile-cli
+5. Set up an IAM user.  YouTube - Configuring the AWSMobile CLI
+https://www.youtube.com/watch?v=MpugaNKtw3k
+6. Now configure awsmobile to use our IAM role:
+>awsmobile configure
+>Enter Access Key, Secret Access Key and region (us-west-2)
+>awsmobile init
+>Default answers should be fine:
+>Please tell us about your project:
+>* Where is your project's source directory:  /
+>* Where is your project's distribution directory that stores build artifacts:  /
+>* What is your project's build command:  npm.cmd run-script build
+>* What is your project's start command for local test run:  npm.cmd run-script start
+>* What awsmobile project name would you like to use:  ask-jeeves-2018-08-12-12-11-54
+
+>Successfully created AWS Mobile Hub project: workshop-2018-08-12-12-11-54
+>This installed a bunch of dependencies for us:
+>info Direct dependencies
+>├─ @expo/samples@2.1.1
+>├─ aws-amplify-react-native@1.0.5
+>├─ expo@29.0.0
+>├─ jest-expo@29.0.0
+>├─ react-native@0.55.4
+>├─ react-navigation@2.11.2
+>└─ react@16.3.1
+
+There will be a lot of additional info and then at the end you should see something like:
+```
+Success! your project is now initialized with awsmobilejs
+ 
+   awsmobilejs\.awsmobile
+     is the workspace of awsmobile-cli, please do not modify its contents
+ 
+   awsmobilejs\#current-backend-info
+      contains information of the backend awsmobile project from the last
+      synchronization with the cloud
+
+   awsmobilejs\backend
+     is where you develop the codebase of the backend awsmobile project
+
+   awsmobile console
+     opens the web console of the backend awsmobile project
+
+   awsmobile run
+     pushes the latest development of the backend awsmobile project to the cloud,
+     and runs the frontend application locally
+
+   awsmobile publish
+     pushes the latest development of the backend awsmobile project to the cloud,
+     and publishes the frontend application to aws S3 for hosting
+
+Happy coding with awsmobile!
+```
+
+This will have created some backend resources including some S3 buckets.  You should now see your project in the AWS Mobile Hub console.
+
+
 
 ## Verifying your Elasticsearch cluster installation
 
