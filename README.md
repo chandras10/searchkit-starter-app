@@ -42,7 +42,8 @@
 	* KeyName : Please select the existing key in this region(Singapore). If not, please create one 
 	* SSHLocation : We can leave as the default value.
 	<img src="images/aws-cloudformation-scr2.png" width="33%" />
-	Click on **Next**.
+    <br/>
+    Click on **Next**.
 4. Leave the defaults as-is on this screen, click **Next**.
 5. In Next screen, Select the checkbox for “I acknowledge that cloudformation might create IAM resouces” in the bottom and Click **Create**.
 6. Once the stack creation completes, Go to Outputs and copy the IP address as below 
