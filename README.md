@@ -48,9 +48,9 @@
 5. In Next screen, Select the checkbox for `I acknowledge that cloudformation might create IAM resouces` in the bottom and Click **Create**.
 6. Once the stack creation completes, Go to Outputs and copy the IP address as below 
 <img src="images/aws-cloudformation-scr3.png" width="33%" />
-7. Go to the cloud9 screen/tab when we left in the step 6 and fill the below details and then click next step
+7. Go to the cloud9 screen/tab when we left in the step 6 and fill the below details and then click next step.
     * User : ec2-user
-    * Host : Paste the IP address copied from the cloudformation stack in step 12
+    * Host : Paste the IP address copied from the cloudformation stack in step 6
     * Port : 22
     * Advanced settings. Environment path – give any pathname (without spaces)
     <img src="images/aws-cloud9-ec2-connect.png" width="33%" />
