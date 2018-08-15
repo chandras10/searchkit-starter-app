@@ -3,7 +3,7 @@
 | Step | Description   |
 | -----|---------------|
 | 1.   | [Generate Cloud9 SSH Key](#cloud9-ssh-key) |
-| 2.   | Setup EC2, Cloud9, Elasticsearch, ... |
+| 2.   | [Setup EC2, Cloud9, Elasticsearch, ...](#run-cfn) |
 | 3.   | Customize IDE. |
 | 4.   | Install Expo mobile client |
 | 5.   | `git clone` the codebase. Verify the setup.|
@@ -24,7 +24,7 @@
 6. In the next page, select the option **Connect and run in remote server (SSH)**. Scroll down and expand View Public SSH key. Click **Copy key to clip board**. Once you have copied the key, please leave this screen intact. We will come back once the EC2 creation completed. 
 <img src="images/aws-cloud9-remote-server.png" width="33%" />
 
-
+<a name="run-cfn"></a>
 7. Open a new browser tab and instantiate this CloudFormation template: 
 <a href="https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?templateURL=https://s3-ap-southeast-1.amazonaws.com/techsummit2018appsync/prereqscfn.json" target="_blank">
   <img src="images/aws-cloudformation-button.png" width="150" />
