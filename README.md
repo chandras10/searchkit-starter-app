@@ -83,5 +83,5 @@ Now you have successfully setup Expo and your AWS Cloud9.
 
 1.	Open the cloud9 terminal
 2.	Issue the below command `curl -XGET <your es domain name – copy from cloudformation output>/amazonec2_new/_count`
-<img src="images/aws-cloud9-es1.png" width="33%" />
-<img src="images/aws-cloud9-es2.png" width="33%" />
+<img src="images/aws-cloud9-es1.png" />
+<img src="images/aws-cloud9-es2.png" />
