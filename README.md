@@ -53,24 +53,24 @@
 ## Customizing the Cloud9 Environment
 
 1. Go to the newly cloud9 environment and click the settings, select THEMES(top right corner near cloud9 symbol). Select one of the Classic theme and night based color ( this is needed for the QR code to be visible for the expo client).
-    ![AWS Cloud9](images/aws-cloud9-theme1.png)
+<img src="images/aws-cloud9-theme1.png" width="350" />
 2. Once the theme got changed, open terminal window. The current working directory will be whatever the environment name you have given during the cloud9 create environment steps.
 3. One a shell/terminal and run command `create-react-native-app Test`.
-    ![AWS Cloud9](images/aws-cloud9-theme2.png)
-    ![AWS Cloud9](images/aws-cloud9-theme3.png)
+<img src="images/aws-cloud9-theme2.png" width="350" />
+<img src="images/aws-cloud9-theme3.png" width="350" />
 4. Once the creation is success, you will see the final confirmation as below. Also, in your cloud9 IDE, you will see the project folder “Test”.
-	![AWS Cloud9](images/aws-cloud9-theme4.png)
+<img src="images/aws-cloud9-theme4.png" width="350" />
 5. `cd Test; npm start`
-	![AWS Cloud9](images/aws-cloud9-react-app1.png)
-	![AWS Cloud9](images/aws-cloud9-react-app2.png)
+<img src="images/aws-cloud9-react-app1.png" width="350" />
+<img src="images/aws-cloud9-react-app2.png" width="350" />
 6. Now, from your mobile, open the expo app.
 7. Scan the QR code on the expo app and you will see the application loading in your mobile.
 8. You can edit the file `App.js` and once saved, you will see the application in your mobile auto load the changes.
-	![AWS Cloud9](images/aws-cloud9-react-app3.png)
+<img src="images/aws-cloud9-react-app3.png" width="350" />
 
 ## Verifying your Elasticsearch cluster installation
 
 1.	Open the cloud9 terminal
 2.	Issue the below command `curl -XGET <your es domain name – copy from cloudformation output>/amazonec2_new/_count`
-	![AWS Cloud9](images/aws-cloud9-es1.png)
-	![AWS Cloud9](images/aws-cloud9-es2.png)
+<img src="images/aws-cloud9-es1.png" width="350" />
+<img src="images/aws-cloud9-es2.png" width="350" />
