@@ -1,7 +1,7 @@
 ## [Ask Jeeves](https://en.wikipedia.org/wiki/Jeeves): Backend integration of mobile applications using AWS AppSync
 
 | Step | Description   |
-| -----|:-------------:|
+| -----|---------------|
 | 1.   | Generate Cloud9 SSH Key |
 | 2.   | Setup EC2, Cloud9, Elasticsearch, ... |
 | 3.   | Verify your setup |
