@@ -6,10 +6,10 @@
 | 2.   | [Setup EC2, Cloud9, Elasticsearch, ...](#run-cfn) |
 | 3.   | [Customize IDE. ](#customize-cloud9)|
 | 4.   | [Install Expo mobile client](#install-expo) |
-| 5.   | `git clone` the codebase. Verify the setup.|
-| 6.   | AppSync Schema |
-| 7.   | User authentication for the mobile app |
-| 8.   | Integration and testing |
+| 5.   | [`git clone` the codebase. Verify the setup.](#clone-mobile-code)
+| 6.   | [AppSync Schema ]|
+| 7.   | [User authentication for the mobile app ]|
+| 8.   | [Integration and testing ]|
 
 <a name="cloud9-ssh-key"></a>
 ##  New Cloud9 Environment
@@ -86,6 +86,10 @@
 7. Scan the QR code on the expo app and you will see the application loading in your mobile.<br/>
 8. You can edit the file `App.js` and once saved, you will see the application in your mobile auto load the changes.<br/>
 <img src="images/aws-cloud9-react-app3.png" width="33%" />
+
+<a name="clone-mobile-code"></a>
+## Replicate mobile application codebase.
+`git clone https://github.com/arunmbalaji/ask-jeeves.git`
 
 ## Verifying your Elasticsearch cluster installation
 
