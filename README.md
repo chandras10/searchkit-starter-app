@@ -72,10 +72,10 @@
 ## III. Install Expo mobile client
 
 To participate with your mobile you need to have the Expo Client installed (Android or iOS).<br/>
-**ANDROID CLIENT:**<br/>
-https://play.google.com/store/apps/details?id=host.exp.exponent 
-**IOS CLIENT:**<br/>
-https://itunes.com/apps/exponent 
+* **ANDROID CLIENT:**<br/>
+    https://play.google.com/store/apps/details?id=host.exp.exponent <br/>
+* **IOS CLIENT:**<br/>
+    https://itunes.com/apps/exponent <br/>
 
 
 <a name="customize-cloud9"></a>
