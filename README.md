@@ -4,15 +4,15 @@
 | -----|---------------|
 | 1.   | [Generate Cloud9 SSH Key](#cloud9-ssh-key) |
 | 2.   | [Setup EC2, Cloud9, Elasticsearch, ...](#run-cfn) |
-| 3.   | [Customize IDE. ](#customize-cloud9)|
-| 4.   | [Install Expo mobile client](#install-expo) |
+| 3.   | [Install Expo mobile client](#install-expo)
+| 4.   | [Customize IDE. ](#customize-cloud9)|
 | 5.   | [`git clone` the codebase. Verify the setup.](#clone-mobile-code)
 | 6.   | [AppSync Schema ]|
 | 7.   | [User authentication for the mobile app ]|
 | 8.   | [Integration and testing ]|
 
 <a name="cloud9-ssh-key"></a>
-##  New Cloud9 Environment
+##  I. Generate Cloud9 SSH Key
 
 1.	Login to AWS console and make sure to select Singapore (`ap-southeast-1`) region. You need to be in **Singapore** region for this lab. 
 2.	Go to EC2 page and create a new key pair if not already exists and download the key to your machine.
@@ -25,7 +25,7 @@
 <img src="images/aws-cloud9-remote-server.png" width="33%" />
 
 <a name="run-cfn"></a>
-##  Development Stack creation
+##  II. Development Stack creation
 1. Open a new browser tab and instantiate this CloudFormation template: 
 <a href="https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?templateURL=https://s3-ap-southeast-1.amazonaws.com/techsummit2018appsync/prereqscfn.json" target="_blank">
   <img src="images/aws-cloudformation-button.png" width="150" />
@@ -68,8 +68,17 @@
 12. Your cloud9 environment is ready<br/>
     <img src="images/aws-cloud9-env-ready4.png" width="33%" />
 
+<a name="install-expo"></a>
+## III. Install Expo mobile client
+To participate with your mobile you need to have the Expo Client installed (Android or iOS).
+**ANDROID CLIENT:**
+https://play.google.com/store/apps/details?id=host.exp.exponent 
+**IOS CLIENT:**
+https://itunes.com/apps/exponent 
+
+
 <a name="customize-cloud9"></a>
-## Customizing the Cloud9 Environment
+## IV. Customizing the Cloud9 Environment
 
 1. Go to the newly cloud9 environment and click the settings, select THEMES(top right corner near cloud9 symbol). Select one of the Classic theme and night based color ( this is needed for the QR code to be visible for the expo client).<br/>
 <img src="images/aws-cloud9-theme1.png" width="33%" />
@@ -88,7 +97,8 @@
 <img src="images/aws-cloud9-react-app3.png" width="33%" />
 
 <a name="clone-mobile-code"></a>
-## Replicate mobile application and set up Cognito authentication using AWS Amplify.
+## IV. Replicate mobile application and set up Cognito authentication using AWS Amplify.
+
 1. `git clone https://github.com/arunmbalaji/ask-jeeves.git`
 2. cd to the project directory "ask-jeeves".
 3. Firstly Install Node.js (download from https://nodejs.org/en/). This will give us npm.
@@ -158,7 +168,7 @@ This will have created some backend resources including some S3 buckets.  You sh
 
 
 
-## Verifying your Elasticsearch cluster installation
+## IV. Verifying your Elasticsearch cluster installation
 
 1.	Open the cloud9 terminal
 2.	Issue the below command `curl -XGET <your es domain name – copy from cloudformation output>/amazonec2_new/_count`
