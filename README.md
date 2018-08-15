@@ -94,17 +94,26 @@
 3. Firstly Install Node.js (download from https://nodejs.org/en/). This will give us npm.
 4. We can then install some dependencies:
 >npm install -g react-native-cli
+
 Yarn is also widely used instead of npm - many online demos use it so it's not bad idea to install, but npm will work fine as well.
+
 >npm install -g yarn
 
 >npm install -g awsmobile-cli
+
 5. Set up an IAM user.  YouTube - Configuring the AWSMobile CLI
 https://www.youtube.com/watch?v=MpugaNKtw3k
+
 6. Now configure awsmobile to use our IAM role:
+
 >awsmobile configure
->Enter Access Key, Secret Access Key and region (us-west-2)
+
+Enter Access Key, Secret Access Key and region (ap-southeast-1)
+
 >awsmobile init
->Default answers should be fine:
+
+Default answers should be fine:
+
 >Please tell us about your project:
 >* Where is your project's source directory:  /
 >* Where is your project's distribution directory that stores build artifacts:  /
@@ -114,14 +123,8 @@ https://www.youtube.com/watch?v=MpugaNKtw3k
 
 >Successfully created AWS Mobile Hub project: workshop-2018-08-12-12-11-54
 >This installed a bunch of dependencies for us:
->info Direct dependencies
->├─ @expo/samples@2.1.1
->├─ aws-amplify-react-native@1.0.5
->├─ expo@29.0.0
->├─ jest-expo@29.0.0
->├─ react-native@0.55.4
->├─ react-navigation@2.11.2
->└─ react@16.3.1
+>info Direct dependencies[...]
+
 
 There will be a lot of additional info and then at the end you should see something like:
 ```
