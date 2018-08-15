@@ -4,7 +4,12 @@
 | -----|---------------|
 | 1.   | Generate Cloud9 SSH Key |
 | 2.   | Setup EC2, Cloud9, Elasticsearch, ... |
-| 3.   | Verify your setup |
+| 3.   | Customize IDE. |
+| 4.   | Install Expo mobile client |
+| 5.   | `git clone` the codebase. Verify the setup.|
+| 6.   | AppSync Schema |
+| 7.   | User authentication for the mobile app |
+| 8.   | Integration and testing |
 
 ##  Setting up your development IDE
 
