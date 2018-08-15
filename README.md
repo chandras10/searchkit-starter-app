@@ -6,10 +6,9 @@
 | 2.   | [Setup EC2, Cloud9, Elasticsearch, ...](#run-cfn) |
 | 3.   | [Install Expo mobile client](#install-expo)
 | 4.   | [QR Code friendly Cloud9 theme](#customize-cloud9)|
-| 5.   | [`git clone` the codebase. Verify the setup.](#clone-mobile-code)
+| 5.   | [Mobile application and Cognito authentication](#clone-mobile-code)
 | 6.   | [AppSync Schema ]|
-| 7.   | [User authentication for the mobile app ]|
-| 8.   | [Integration and testing ]|
+| 7.   | [Integration and testing ]|
 
 <a name="cloud9-ssh-key"></a>
 ##  I. Generate Cloud9 SSH Key
@@ -98,7 +97,7 @@ To participate with your mobile you need to have the Expo Client installed (Andr
 <img src="images/aws-cloud9-react-app3.png" width="33%" />
 
 <a name="clone-mobile-code"></a>
-## IV. Replicate mobile application and set up Cognito authentication using AWS Amplify.
+## V. Mobile application and Cognito Authentication.
 
 1. `git clone https://github.com/arunmbalaji/ask-jeeves.git`
 2. cd to the project directory "ask-jeeves".
@@ -169,7 +168,7 @@ This will have created some backend resources including some S3 buckets.  You sh
 
 
 
-## IV. Verifying your Elasticsearch cluster installation
+## VI. Verifying your Elasticsearch cluster installation
 
 1.	Open the cloud9 terminal
 2.	Issue the below command `curl -XGET <your es domain name – copy from cloudformation output>/amazonec2_new/_count`
