@@ -50,6 +50,17 @@
 16. Your cloud9 environment is ready
     <img src="images/aws-cloud9-env-ready4.png" width="350" />
 
+## Configure Expo
+## Install Expo mobile client
+
+Follow the installation instructions for your mobile device on the [official Expo website](https://docs.expo.io/versions/latest/introduction/installation#mobile-client-expo-for-ios-and-android)
+
+## Create Expo account
+
+Create an Expo account via the [offical Expo website](https://expo.io/signup)
+
+Now you have successfully setup Expo and your AWS Cloud9. 
+
 ## Customizing the Cloud9 Environment
 
 1. Go to the newly cloud9 environment and click the settings, select THEMES(top right corner near cloud9 symbol). Select one of the Classic theme and night based color ( this is needed for the QR code to be visible for the expo client).
