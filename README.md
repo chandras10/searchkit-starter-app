@@ -55,7 +55,7 @@
     * Advanced settings. Environment path – give any pathname (without spaces)
     <img src="images/aws-cloud9-ec2-connect.png" width="33%" />
 
-8. Click **Create environment**.
+8. Click **Create environment** and wait for it to complete.
     <img src="images/aws-cloud9-ec2-connect2.png" width="33%" />
 
 9. In the below screen, uncheck the “c9.ide.lambda.docker”. Click **Next**.
