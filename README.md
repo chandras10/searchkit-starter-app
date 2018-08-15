@@ -2,7 +2,7 @@
 
 | Step | Description   |
 | -----|---------------|
-| 1.   | Generate Cloud9 SSH Key |
+| 1.   | [Generate Cloud9 SSH Key](#Setting-up-your-development-IDE) |
 | 2.   | Setup EC2, Cloud9, Elasticsearch, ... |
 | 3.   | Customize IDE. |
 | 4.   | Install Expo mobile client |
