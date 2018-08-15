@@ -4,8 +4,8 @@
 | -----|---------------|
 | 1.   | [Generate Cloud9 SSH Key](#cloud9-ssh-key) |
 | 2.   | [Setup EC2, Cloud9, Elasticsearch, ...](#run-cfn) |
-| 3.   | Customize IDE. |
-| 4.   | Install Expo mobile client |
+| 3.   | [Customize IDE. ](#customize-cloud9)|
+| 4.   | [Install Expo mobile client](#install-expo) |
 | 5.   | `git clone` the codebase. Verify the setup.|
 | 6.   | AppSync Schema |
 | 7.   | User authentication for the mobile app |
@@ -68,33 +68,23 @@
 12. Your cloud9 environment is ready<br/>
     <img src="images/aws-cloud9-env-ready4.png" width="33%" />
 
-## Configure Expo
-**Install Expo mobile client**
-
-Follow the installation instructions for your mobile device on the [official Expo website](https://docs.expo.io/versions/latest/introduction/installation#mobile-client-expo-for-ios-and-android)
-
-**Create Expo account**
-
-Create an Expo account via the [offical Expo website](https://expo.io/signup)
-
-Now you have successfully setup Expo and your AWS Cloud9. 
-
+<a name="customize-cloud9"></a>
 ## Customizing the Cloud9 Environment
 
-1. Go to the newly cloud9 environment and click the settings, select THEMES(top right corner near cloud9 symbol). Select one of the Classic theme and night based color ( this is needed for the QR code to be visible for the expo client).
+1. Go to the newly cloud9 environment and click the settings, select THEMES(top right corner near cloud9 symbol). Select one of the Classic theme and night based color ( this is needed for the QR code to be visible for the expo client).<br/>
 <img src="images/aws-cloud9-theme1.png" width="33%" />
 2. Once the theme got changed, open terminal window. The current working directory will be whatever the environment name you have given during the cloud9 create environment steps.
-3. One a shell/terminal and run command `create-react-native-app Test`.
+3. One a shell/terminal and run command `create-react-native-app Test`.<br/>
 <img src="images/aws-cloud9-theme2.png" width="33%" />
 <img src="images/aws-cloud9-theme3.png" width="33%" />
-4. Once the creation is success, you will see the final confirmation as below. Also, in your cloud9 IDE, you will see the project folder “Test”.
+4. Once the creation is success, you will see the final confirmation as below. Also, in your cloud9 IDE, you will see the project folder “Test”.<br/>
 <img src="images/aws-cloud9-theme4.png" width="33%" />
-5. `cd Test; npm start`
+5. `cd Test; npm start`<br/>
 <img src="images/aws-cloud9-react-app1.png" width="33%" />
 <img src="images/aws-cloud9-react-app2.png" width="33%" />
 6. Now, from your mobile, open the expo app.
 7. Scan the QR code on the expo app and you will see the application loading in your mobile.
-8. You can edit the file `App.js` and once saved, you will see the application in your mobile auto load the changes.
+8. You can edit the file `App.js` and once saved, you will see the application in your mobile auto load the changes.<br/>
 <img src="images/aws-cloud9-react-app3.png" width="33%" />
 
 ## Verifying your Elasticsearch cluster installation
