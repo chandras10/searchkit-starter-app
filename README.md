@@ -1,6 +1,12 @@
 ## [Ask Jeeves](https://en.wikipedia.org/wiki/Jeeves): Backend integration of mobile applications using AWS AppSync
 
-##  Getting Started
+| Step | Description   |
+| -----|:-------------:|
+| 1.   | Generate Cloud9 SSH Key |
+| 2.   | Setup EC2, Cloud9, Elasticsearch, ... |
+| 3.   | Verify your setup |
+
+##  Setting up your development IDE
 
 1.	Login to AWS console and make sure to select Singapore (`ap-southeast-1`) region. You need to be in **Singapore** region for this lab. 
 2.	Go to EC2 page and create a new key pair if not already exists and download the key to your machine.
@@ -11,6 +17,7 @@
 5. Give any appropriate name and description to your environment. Click on **Next**.
 6. In the next page, select the option **Connect and run in remote server (SSH)**. Scroll down and expand View Public SSH key. Click **Copy key to clip board**. Once you have copied the key, please leave this screen intact. We will come back once the EC2 creation completed. 
 <img src="images/aws-cloud9-remote-server.png" width="33%" />
+
 
 7. Open a new browser tab and instantiate this CloudFormation template: 
 <a href="https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?templateURL=https://s3-ap-southeast-1.amazonaws.com/techsummit2018appsync/prereqscfn.json" target="_blank">
