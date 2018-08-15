@@ -73,7 +73,7 @@
 
 1. Go to the newly cloud9 environment and click the settings, select THEMES(top right corner near cloud9 symbol). Select one of the Classic theme and night based color ( this is needed for the QR code to be visible for the expo client).<br/>
 <img src="images/aws-cloud9-theme1.png" width="33%" />
-2. Once the theme got changed, open terminal window. The current working directory will be whatever the environment name you have given during the cloud9 create environment steps.
+2. Once the theme got changed, open terminal window. The current working directory will be whatever the environment name you have given during the cloud9 create environment steps.<br/>
 3. One a shell/terminal and run command `create-react-native-app Test`.<br/>
 <img src="images/aws-cloud9-theme2.png" width="33%" />
 <img src="images/aws-cloud9-theme3.png" width="33%" />
@@ -82,8 +82,8 @@
 5. `cd Test; npm start`<br/>
 <img src="images/aws-cloud9-react-app1.png" width="33%" />
 <img src="images/aws-cloud9-react-app2.png" width="33%" />
-6. Now, from your mobile, open the expo app.
-7. Scan the QR code on the expo app and you will see the application loading in your mobile.
+6. Now, from your mobile, open the expo app.<br/>
+7. Scan the QR code on the expo app and you will see the application loading in your mobile.<br/>
 8. You can edit the file `App.js` and once saved, you will see the application in your mobile auto load the changes.<br/>
 <img src="images/aws-cloud9-react-app3.png" width="33%" />
 
