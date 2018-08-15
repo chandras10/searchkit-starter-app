@@ -5,7 +5,7 @@
 | 1.   | [Generate Cloud9 SSH Key](#cloud9-ssh-key) |
 | 2.   | [Setup EC2, Cloud9, Elasticsearch, ...](#run-cfn) |
 | 3.   | [Install Expo mobile client](#install-expo)
-| 4.   | [Customize IDE. ](#customize-cloud9)|
+| 4.   | [QR Code friendly Cloud9 theme](#customize-cloud9)|
 | 5.   | [`git clone` the codebase. Verify the setup.](#clone-mobile-code)
 | 6.   | [AppSync Schema ]|
 | 7.   | [User authentication for the mobile app ]|
@@ -79,7 +79,7 @@ To participate with your mobile you need to have the Expo Client installed (Andr
 
 
 <a name="customize-cloud9"></a>
-## IV. Customizing the Cloud9 Environment
+## IV. QR Code friendly Cloud9 theme
 
 1. Go to the newly cloud9 environment and click the settings, select THEMES(top right corner near cloud9 symbol). Select one of the Classic theme and night based color ( this is needed for the QR code to be visible for the expo client).<br/>
 <img src="images/aws-cloud9-theme1.png" width="33%" />
