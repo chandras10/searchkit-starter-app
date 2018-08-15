@@ -51,11 +51,11 @@
     <img src="images/aws-cloud9-env-ready4.png" width="350" />
 
 ## Configure Expo
-## Install Expo mobile client
+**Install Expo mobile client**
 
 Follow the installation instructions for your mobile device on the [official Expo website](https://docs.expo.io/versions/latest/introduction/installation#mobile-client-expo-for-ios-and-android)
 
-## Create Expo account
+**Create Expo account**
 
 Create an Expo account via the [offical Expo website](https://expo.io/signup)
 
