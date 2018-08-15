@@ -57,6 +57,7 @@
 
 8. Click **Create environment**.
     <img src="images/aws-cloud9-ec2-connect2.png" width="33%" />
+
 9. In the below screen, uncheck the “c9.ide.lambda.docker”. Click **Next**.
     <img src="images/aws-cloud9-env-ready1.png" width="33%" />
 10. In the next screen, click cancel the installation and click Finish. We do not need lambda related stuffs for now
