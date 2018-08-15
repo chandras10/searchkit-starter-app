@@ -18,7 +18,8 @@
 </a>
 
 
-8. Click on **Next**. <img src="images/aws-cloudformation-scr1.png" width="350" />
+8. Click on **Next**. 
+<img src="images/aws-cloudformation-scr1.png" width="350" />
 
 9. Please provide below inputs
 	* Stack Name :  cloud9env (any name as you prefer)
@@ -26,19 +27,20 @@
 	* InstanceType : You can leave the default (c4.xlarge)
 	* KeyName : Please select the existing key in this region(Singapore). If not, please create one 
 	* SSHLocation : We can leave as the default value.
-	![](images/aws-cloudformation-scr2.png) 
+	<img src="images/aws-cloudformation-scr2.png" width="350" />
 	Click on **Next**.
 10. Leave the defaults as-is on this screen, click **Next**.
 11. In Next screen, Select the checkbox for “I acknowledge that cloudformation might create IAM resouces” in the bottom and Click **Create**.
-12. Once the stack creation completes, Go to Outputs and copy the IP address as below ![Cloudformation complete](images/aws-cloudformation-scr3.png)
+12. Once the stack creation completes, Go to Outputs and copy the IP address as below 
+<img src="images/aws-cloudformation-scr3.png" width="350" />
 13. Go to the cloud9 screen/tab when we left in the step 6 and fill the below details and then click Next step
 	* User : ec2-user
 	* Host : Paste the IP address copied from the cloudformation stack in step 12
 	* Port : 22
 	* Advanced settings. Environment path – give any pathname (without spaces)
-	![AWS Cloud9](images/aws-cloud9-ec2-connect.png)
+	<img src="images/aws-cloud9-ec2-connect.png" width="350" />
 14. Click **Create environment**.
-    ![AWS Cloud9](images/aws-cloud9-ec2-connect2.png)
+    <img src="images/aws-cloud9-ec2-connect2.png" width="350" />
 15. In the below screen, uncheck the “c9.ide.lambda.docker”. Click **Next**.
     <img src="images/aws-cloud9-env-ready1.png" width="350" />
 16. In the next screen, click cancel the installation and click Finish. We do not need lambda related stuffs for now
