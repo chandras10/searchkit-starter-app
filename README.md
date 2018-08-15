@@ -2,7 +2,7 @@
 
 | Step | Description   |
 | -----|---------------|
-| 1.   | [Generate Cloud9 SSH Key](#Setting-up-your-development-IDE) |
+| 1.   | [Generate Cloud9 SSH Key](#cloud9-ssh-key) |
 | 2.   | Setup EC2, Cloud9, Elasticsearch, ... |
 | 3.   | Customize IDE. |
 | 4.   | Install Expo mobile client |
@@ -11,7 +11,8 @@
 | 7.   | User authentication for the mobile app |
 | 8.   | Integration and testing |
 
-##  Setting up your development IDE
+<a name="cloud9-ssh-key"></a>
+##  New Cloud9 Environment
 
 1.	Login to AWS console and make sure to select Singapore (`ap-southeast-1`) region. You need to be in **Singapore** region for this lab. 
 2.	Go to EC2 page and create a new key pair if not already exists and download the key to your machine.
