@@ -70,10 +70,11 @@
 
 <a name="install-expo"></a>
 ## III. Install Expo mobile client
-To participate with your mobile you need to have the Expo Client installed (Android or iOS).
-**ANDROID CLIENT:**
+
+To participate with your mobile you need to have the Expo Client installed (Android or iOS).<br/>
+**ANDROID CLIENT:**<br/>
 https://play.google.com/store/apps/details?id=host.exp.exponent 
-**IOS CLIENT:**
+**IOS CLIENT:**<br/>
 https://itunes.com/apps/exponent 
 
 
