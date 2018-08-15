@@ -49,10 +49,10 @@
 6. Once the stack creation completes, Go to Outputs and copy the IP address as below 
 <img src="images/aws-cloudformation-scr3.png" width="33%" />
 7. Go to the cloud9 screen/tab when we left in the step 6 and fill the below details and then click next step.
-    * User : ec2-user
-    * Host : Paste the IP address copied from the cloudformation stack in step 6
-    * Port : 22
-    * Advanced settings. Environment path – give any pathname (without spaces)
+>    * User : ec2-user
+>    * Host : Paste the IP address copied from the cloudformation stack in step 6
+>    * Port : 22
+>    * Advanced settings. Environment path – give any pathname (without spaces)
     <img src="images/aws-cloud9-ec2-connect.png" width="33%" />
 8. Click **Create environment**.
     <img src="images/aws-cloud9-ec2-connect2.png" width="33%" />
