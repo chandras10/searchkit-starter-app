@@ -40,13 +40,13 @@
 14. Click **Create environment**.
     ![AWS Cloud9](images/aws-cloud9-ec2-connect2.png)
 15. In the below screen, uncheck the “c9.ide.lambda.docker”. Click **Next**.
-	![AWS Cloud9](images/aws-cloud9-env-ready1.png)
+    <img src="images/aws-cloud9-env-ready1.png" width="350" />
 16. In the next screen, click cancel the installation and click Finish. We do not need lambda related stuffs for now
-	![AWS Cloud9](images/aws-cloud9-env-ready2.png)
+    <img src="images/aws-cloud9-env-ready2.png" width="350" />
 17. Click **Finish** in the below screen
-	![AWS Cloud9](images/aws-cloud9-env-ready3.png)
+	<img src="images/aws-cloud9-env-ready3.png" width="350" />
 16. Your cloud9 environment is ready
-	![AWS Cloud9](images/aws-cloud9-env-ready4.png)
+    <img src="images/aws-cloud9-env-ready4.png" width="350" />
 
 ## Customizing the Cloud9 Environment
 
